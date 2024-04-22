@@ -1,0 +1,20 @@
+[WORKSPACE]
+  MPW_NAME=dk-lm3s815
+  Project="../../src/driverlib.Uv2",A
+  Project="bitband/bitband.Uv2"
+  Project="blinky/blinky.Uv2"
+  Project="boot_demo1/boot_demo1.Uv2"
+  Project="boot_demo2/boot_demo2.Uv2"
+  Project="comparator/comparator.Uv2"
+  Project="gpio_jtag/gpio_jtag.Uv2"
+  Project="gpio_led/gpio_led.Uv2"
+  Project="hello/hello.Uv2"
+  Project="i2c_atmel/i2c_atmel.Uv2"
+  Project="interrupts/interrupts.Uv2"
+  Project="mpu_fault/mpu_fault.Uv2"
+  Project="pwmgen/pwmgen.Uv2"
+  Project="qs_dk-lm3s815/qs_dk-lm3s815.Uv2"
+  Project="ssi_atmel/ssi_atmel.Uv2"
+  Project="timers/timers.Uv2"
+  Project="uart_echo/uart_echo.Uv2"
+  Project="watchdog/watchdog.Uv2"

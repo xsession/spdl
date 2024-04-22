@@ -1,0 +1,92 @@
+Dependencies for Project 'qs_ek-lm3s2965_revc', Target 'qs_ek-lm3s2965_revc': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\audio.c)(0x474178B0)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Luminary-D__UVISION_VERSION="533" -Drvmdk -DPART_LM3S2965-o .\rvmdk\audio.o --omf_browse .\rvmdk\audio.crf --depend .\rvmdk\audio.d)
+I (../../../hw_memmap.h)(0x474178B8)
+I (../../../hw_pwm.h)(0x474178B8)
+I (../../../hw_types.h)(0x474178B8)
+I (../../../src/pwm.h)(0x47417930)
+I (audio.h)(0x474178B0)
+I (globals.h)(0x474178B0)
+F (.\can_net.c)(0x474178B0)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Luminary-D__UVISION_VERSION="533" -Drvmdk -DPART_LM3S2965-o .\rvmdk\can_net.o --omf_browse .\rvmdk\can_net.crf --depend .\rvmdk\can_net.d)
+I (../../../hw_types.h)(0x474178B8)
+I (../../../hw_memmap.h)(0x474178B8)
+I (../../../hw_ints.h)(0x474178B8)
+I (../../../src/debug.h)(0x4741792E)
+I (../../../src/interrupt.h)(0x47417930)
+I (../../../src/sysctl.h)(0x47417930)
+I (../../../src/systick.h)(0x47417930)
+I (../../../src/gpio.h)(0x47417930)
+I (../../../utils/diag.h)(0x47417930)
+I (../../../src/can.h)(0x4741792E)
+I (../can_device_qs/can_common.h)(0x474178B0)
+I (can_net.h)(0x474178B0)
+I (audio.h)(0x474178B0)
+F (.\game.c)(0x474178B0)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Luminary-D__UVISION_VERSION="533" -Drvmdk -DPART_LM3S2965-o .\rvmdk\game.o --omf_browse .\rvmdk\game.crf --depend .\rvmdk\game.d)
+I (../../../hw_memmap.h)(0x474178B8)
+I (../../../hw_types.h)(0x474178B8)
+I (../../../src/uart.h)(0x47417930)
+I (../../../src/sysctl.h)(0x47417930)
+I (../rit128x96x4.h)(0x474178B0)
+I (audio.h)(0x474178B0)
+I (can_net.h)(0x474178B0)
+I (game.h)(0x474178B0)
+I (globals.h)(0x474178B0)
+I (images.h)(0x474178B0)
+I (random.h)(0x474178B0)
+I (sounds.h)(0x474178B0)
+F (.\images.c)(0x474178B0)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Luminary-D__UVISION_VERSION="533" -Drvmdk -DPART_LM3S2965-o .\rvmdk\images.o --omf_browse .\rvmdk\images.crf --depend .\rvmdk\images.d)
+I (images.h)(0x474178B0)
+F (.\qs_ek-lm3s2965_revc.c)(0x474178B0)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Luminary-D__UVISION_VERSION="533" -Drvmdk -DPART_LM3S2965-o .\rvmdk\qs_ek-lm3s2965_revc.o --omf_browse .\rvmdk\qs_ek-lm3s2965_revc.crf --depend .\rvmdk\qs_ek-lm3s2965_revc.d)
+I (../../../hw_ints.h)(0x474178B8)
+I (../../../hw_memmap.h)(0x474178B8)
+I (../../../hw_sysctl.h)(0x474178B8)
+I (../../../hw_types.h)(0x474178B8)
+I (../../../src/adc.h)(0x4741792E)
+I (../../../src/can.h)(0x4741792E)
+I (../../../src/debug.h)(0x4741792E)
+I (../../../src/gpio.h)(0x47417930)
+I (../../../src/interrupt.h)(0x47417930)
+I (../../../src/pwm.h)(0x47417930)
+I (../../../src/sysctl.h)(0x47417930)
+I (../../../src/systick.h)(0x47417930)
+I (../../../src/timer.h)(0x47417930)
+I (../../../src/uart.h)(0x47417930)
+I (../rit128x96x4.h)(0x474178B0)
+I (audio.h)(0x474178B0)
+I (can_net.h)(0x474178B0)
+I (game.h)(0x474178B0)
+I (globals.h)(0x474178B0)
+I (images.h)(0x474178B0)
+I (random.h)(0x474178B0)
+I (screen_saver.h)(0x474178B0)
+I (sounds.h)(0x474178B0)
+F (.\random.c)(0x474178B0)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Luminary-D__UVISION_VERSION="533" -Drvmdk -DPART_LM3S2965-o .\rvmdk\random.o --omf_browse .\rvmdk\random.crf --depend .\rvmdk\random.d)
+I (random.h)(0x474178B0)
+F (..\rit128x96x4.c)(0x474178B0)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Luminary-D__UVISION_VERSION="533" -Drvmdk -DPART_LM3S2965-o .\rvmdk\rit128x96x4.o --omf_browse .\rvmdk\rit128x96x4.crf --depend .\rvmdk\rit128x96x4.d)
+I (..\../../hw_ssi.h)(0x474178B8)
+I (..\../../hw_memmap.h)(0x474178B8)
+I (..\../../hw_sysctl.h)(0x474178B8)
+I (..\../../hw_types.h)(0x474178B8)
+I (..\../../src/debug.h)(0x4741792E)
+I (..\../../src/gpio.h)(0x47417930)
+I (..\../../src/ssi.h)(0x47417930)
+I (..\../../src/sysctl.h)(0x47417930)
+I (..\rit128x96x4.h)(0x474178B0)
+F (.\screen_saver.c)(0x474178B0)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Luminary-D__UVISION_VERSION="533" -Drvmdk -DPART_LM3S2965-o .\rvmdk\screen_saver.o --omf_browse .\rvmdk\screen_saver.crf --depend .\rvmdk\screen_saver.d)
+I (../../../hw_memmap.h)(0x474178B8)
+I (../../../hw_types.h)(0x474178B8)
+I (../../../src/gpio.h)(0x47417930)
+I (../../../src/pwm.h)(0x47417930)
+I (../../../src/sysctl.h)(0x47417930)
+I (../rit128x96x4.h)(0x474178B0)
+I (audio.h)(0x474178B0)
+I (can_net.h)(0x474178B0)
+I (globals.h)(0x474178B0)
+I (random.h)(0x474178B0)
+I (screen_saver.h)(0x474178B0)
+F (.\sounds.c)(0x474178B0)(-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Luminary-D__UVISION_VERSION="533" -Drvmdk -DPART_LM3S2965-o .\rvmdk\sounds.o --omf_browse .\rvmdk\sounds.crf --depend .\rvmdk\sounds.d)
+I (audio.h)(0x474178B0)
+I (sounds.h)(0x474178B0)
+F (.\startup_rvmdk.S)(0x474178B0)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Luminary--pd "__UVISION_VERSION SETA 533"-o .\rvmdk\startup_rvmdk.o --depend .\rvmdk\startup_rvmdk.d)
+F (..\..\..\src\rvmdk\driverlib.lib)(0x47418F6E)()
+F (.\readme.txt)(0x474178B0)()

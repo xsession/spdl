@@ -1,0 +1,1015 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Section Cross References
+
+    audio.o(.text) refers to pwm.o(i.PWMOutputState) for PWMOutputState
+    audio.o(.text) refers to pwm.o(i.PWMOutputInvert) for PWMOutputInvert
+    audio.o(.text) refers to pwm.o(i.PWMGenPeriodSet) for PWMGenPeriodSet
+    audio.o(.text) refers to pwm.o(i.PWMSyncUpdate) for PWMSyncUpdate
+    audio.o(.text) refers to pwm.o(i.PWMGenDisable) for PWMGenDisable
+    audio.o(.text) refers to pwm.o(i.PWMGenConfigure) for PWMGenConfigure
+    audio.o(.text) refers to pwm.o(i.PWMGenEnable) for PWMGenEnable
+    audio.o(.text) refers to qs_ek-lm3s2965_revc.o(.data) for g_ulSystemClock
+    audio.o(.text) refers to audio.o(.data) for .data
+    can_net.o(.text) refers to can.o(i.CANMessageGet) for CANMessageGet
+    can_net.o(.text) refers to can.o(i.CANMessageSet) for CANMessageSet
+    can_net.o(.text) refers to can.o(i.CANIntStatus) for CANIntStatus
+    can_net.o(.text) refers to can.o(i.CANStatusGet) for CANStatusGet
+    can_net.o(.text) refers to can.o(i.CANMessageClear) for CANMessageClear
+    can_net.o(.text) refers to audio.o(.text) for AudioVolumeUp
+    can_net.o(.text) refers to can.o(i.CANIntClear) for CANIntClear
+    can_net.o(.text) refers to sysctl.o(i.SysCtlPeripheralEnable) for SysCtlPeripheralEnable
+    can_net.o(.text) refers to gpio.o(i.GPIOPinTypeCAN) for GPIOPinTypeCAN
+    can_net.o(.text) refers to can.o(i.CANInit) for CANInit
+    can_net.o(.text) refers to can.o(i.CANSetBitTiming) for CANSetBitTiming
+    can_net.o(.text) refers to can.o(i.CANEnable) for CANEnable
+    can_net.o(.text) refers to can.o(i.CANIntEnable) for CANIntEnable
+    can_net.o(.text) refers to interrupt.o(i.IntEnable) for IntEnable
+    can_net.o(.text) refers to can_net.o(.data) for .data
+    can_net.o(.text) refers to can_net.o(.bss) for .bss
+    can_net.o(.text) refers to can_net.o(.constdata) for .constdata
+    game.o(.text) refers to random.o(.text) for RandomSeed
+    game.o(.text) refers to game.o(.bss) for .bss
+    game.o(.text) refers to game.o(.data) for .data
+    game.o(.text) refers to qs_ek-lm3s2965_revc.o(.bss) for g_pucFrame
+    game.o(.text) refers to images.o(.constdata) for g_ppucSprites
+    game.o(.text) refers to audio.o(.text) for AudioPlaySound
+    game.o(.text) refers to can_net.o(.text) for CANUpdateTargetLED
+    game.o(.text) refers to images.o(.constdata) for g_pucMonster
+    game.o(.text) refers to sounds.o(.constdata) for g_pusFireEffect
+    game.o(.text) refers to sounds.o(.constdata) for g_pusWallEffect
+    game.o(.text) refers to sounds.o(.constdata) for g_pusMonsterEffect
+    game.o(.text) refers to images.o(.constdata) for g_pucPlayerStandingDown
+    game.o(.text) refers to images.o(.constdata) for g_pucPlayerWalkingUp
+    game.o(.text) refers to images.o(.constdata) for g_pucPlayerWalkingDown
+    game.o(.text) refers to images.o(.constdata) for g_pucPlayerWalkingLeft
+    game.o(.text) refers to images.o(.constdata) for g_pucPlayerWalkingRight
+    game.o(.text) refers to images.o(.constdata) for g_pucPlayerDying
+    game.o(.text) refers to images.o(.constdata) for g_pucPlayerStandingUp
+    game.o(.text) refers to images.o(.constdata) for g_pucPlayerStandingLeft
+    game.o(.text) refers to images.o(.constdata) for g_pucPlayerStandingRight
+    game.o(.text) refers to images.o(.constdata) for g_pucExplosion
+    game.o(.text) refers to rit128x96x4.o(.text) for RIT128x96x4ImageDraw
+    game.o(.text) refers to qs_ek-lm3s2965_revc.o(.data) for g_ulFlags
+    game.o(.text) refers to images.o(.constdata) for g_pucPlay
+    game.o(.text) refers to sounds.o(.constdata) for g_pusStartOfGame
+    game.o(.text) refers to sounds.o(.constdata) for g_pusEndOfMaze
+    game.o(.text) refers to sounds.o(.constdata) for g_pusPlayerEffect
+    game.o(.text) refers to uart.o(i.UARTCharPut) for UARTCharPut
+    game.o(.text) refers to sounds.o(.constdata) for g_pusEndOfGame
+    game.o(.text) refers to images.o(.constdata) for g_pucGameOver
+    game.o(.text) refers to images.o(.constdata) for g_pucScore
+    game.o(.text) refers to images.o(.constdata) for g_ppucDigits
+    game.o(.text) refers to images.o(.constdata) for g_pucDot
+    qs_ek-lm3s2965_revc.o(.text) refers to audio.o(.text) for AudioHandler
+    qs_ek-lm3s2965_revc.o(.text) refers to gpio.o(i.GPIOPinRead) for GPIOPinRead
+    qs_ek-lm3s2965_revc.o(.text) refers to random.o(.text) for RandomAddEntropy
+    qs_ek-lm3s2965_revc.o(.text) refers to rit128x96x4.o(.text) for RIT128x96x4ImageDraw
+    qs_ek-lm3s2965_revc.o(.text) refers to sysctl.o(i.SysCtlLDOSet) for SysCtlLDOSet
+    qs_ek-lm3s2965_revc.o(.text) refers to sysctl.o(i.SysCtlClockSet) for SysCtlClockSet
+    qs_ek-lm3s2965_revc.o(.text) refers to sysctl.o(i.SysCtlPWMClockSet) for SysCtlPWMClockSet
+    qs_ek-lm3s2965_revc.o(.text) refers to sysctl.o(i.SysCtlClockGet) for SysCtlClockGet
+    qs_ek-lm3s2965_revc.o(.text) refers to sysctl.o(i.SysCtlPeripheralEnable) for SysCtlPeripheralEnable
+    qs_ek-lm3s2965_revc.o(.text) refers to gpio.o(i.GPIOPinTypeGPIOInput) for GPIOPinTypeGPIOInput
+    qs_ek-lm3s2965_revc.o(.text) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    qs_ek-lm3s2965_revc.o(.text) refers to gpio.o(i.GPIOPinTypeUART) for GPIOPinTypeUART
+    qs_ek-lm3s2965_revc.o(.text) refers to gpio.o(i.GPIOPinTypePWM) for GPIOPinTypePWM
+    qs_ek-lm3s2965_revc.o(.text) refers to gpio.o(i.GPIOPinTypeGPIOOutput) for GPIOPinTypeGPIOOutput
+    qs_ek-lm3s2965_revc.o(.text) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    qs_ek-lm3s2965_revc.o(.text) refers to can_net.o(.text) for CANConfigure
+    qs_ek-lm3s2965_revc.o(.text) refers to uart.o(i.UARTConfigSetExpClk) for UARTConfigSetExpClk
+    qs_ek-lm3s2965_revc.o(.text) refers to uart.o(i.UARTEnable) for UARTEnable
+    qs_ek-lm3s2965_revc.o(.text) refers to uart.o(i.UARTCharPut) for UARTCharPut
+    qs_ek-lm3s2965_revc.o(.text) refers to systick.o(i.SysTickPeriodSet) for SysTickPeriodSet
+    qs_ek-lm3s2965_revc.o(.text) refers to systick.o(i.SysTickIntEnable) for SysTickIntEnable
+    qs_ek-lm3s2965_revc.o(.text) refers to systick.o(i.SysTickEnable) for SysTickEnable
+    qs_ek-lm3s2965_revc.o(.text) refers to game.o(.text) for MainScreen
+    qs_ek-lm3s2965_revc.o(.text) refers to screen_saver.o(.text) for ScreenSaver
+    qs_ek-lm3s2965_revc.o(.text) refers to qs_ek-lm3s2965_revc.o(.data) for .data
+    qs_ek-lm3s2965_revc.o(.text) refers to qs_ek-lm3s2965_revc.o(.bss) for .bss
+    qs_ek-lm3s2965_revc.o(.text) refers to sounds.o(.constdata) for g_pusIntro
+    qs_ek-lm3s2965_revc.o(.text) refers to images.o(.constdata) for g_pucLMILogo
+    qs_ek-lm3s2965_revc.o(.text) refers to images.o(.constdata) for g_pucKeilLogo
+    random.o(.text) refers to random.o(.bss) for .bss
+    random.o(.text) refers to random.o(.data) for .data
+    rit128x96x4.o(.text) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    rit128x96x4.o(.text) refers to ssi.o(i.SSIDataPut) for SSIDataPut
+    rit128x96x4.o(.text) refers to ssi.o(i.SSIDataGet) for SSIDataGet
+    rit128x96x4.o(.text) refers to ssi.o(i.SSIDisable) for SSIDisable
+    rit128x96x4.o(.text) refers to sysctl.o(i.SysCtlClockGet) for SysCtlClockGet
+    rit128x96x4.o(.text) refers to ssi.o(i.SSIConfigSetExpClk) for SSIConfigSetExpClk
+    rit128x96x4.o(.text) refers to gpio.o(i.GPIOPinTypeSSI) for GPIOPinTypeSSI
+    rit128x96x4.o(.text) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    rit128x96x4.o(.text) refers to ssi.o(i.SSIEnable) for SSIEnable
+    rit128x96x4.o(.text) refers to ssi.o(i.SSIDataGetNonBlocking) for SSIDataGetNonBlocking
+    rit128x96x4.o(.text) refers to gpio.o(i.GPIOPinTypeGPIOOutput) for GPIOPinTypeGPIOOutput
+    rit128x96x4.o(.text) refers to sysctl.o(i.SysCtlPeripheralEnable) for SysCtlPeripheralEnable
+    rit128x96x4.o(.text) refers to rit128x96x4.o(.data) for .data
+    rit128x96x4.o(.text) refers to rit128x96x4.o(.constdata) for .constdata
+    screen_saver.o(.text) refers to random.o(.text) for RandomNumber
+    screen_saver.o(.text) refers to rit128x96x4.o(.text) for RIT128x96x4ImageDraw
+    screen_saver.o(.text) refers to audio.o(.text) for AudioOff
+    screen_saver.o(.text) refers to pwm.o(i.PWMOutputState) for PWMOutputState
+    screen_saver.o(.text) refers to pwm.o(i.PWMGenDisable) for PWMGenDisable
+    screen_saver.o(.text) refers to pwm.o(i.PWMGenConfigure) for PWMGenConfigure
+    screen_saver.o(.text) refers to pwm.o(i.PWMGenPeriodSet) for PWMGenPeriodSet
+    screen_saver.o(.text) refers to pwm.o(i.PWMPulseWidthSet) for PWMPulseWidthSet
+    screen_saver.o(.text) refers to pwm.o(i.PWMGenEnable) for PWMGenEnable
+    screen_saver.o(.text) refers to gpio.o(i.GPIOPinTypePWM) for GPIOPinTypePWM
+    screen_saver.o(.text) refers to can_net.o(.text) for CANUpdateTargetLED
+    screen_saver.o(.text) refers to gpio.o(i.GPIOPinTypeGPIOOutput) for GPIOPinTypeGPIOOutput
+    screen_saver.o(.text) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    screen_saver.o(.text) refers to qs_ek-lm3s2965_revc.o(.bss) for g_pucFrame
+    screen_saver.o(.text) refers to screen_saver.o(.bss) for .bss
+    screen_saver.o(.text) refers to screen_saver.o(.data) for .data
+    screen_saver.o(.text) refers to qs_ek-lm3s2965_revc.o(.data) for g_ulFlags
+    startup_rvmdk.o(RESET) refers to startup_rvmdk.o(STACK) for StackMem
+    startup_rvmdk.o(RESET) refers to qs_ek-lm3s2965_revc.o(.text) for SysTickIntHandler
+    startup_rvmdk.o(RESET) refers to can_net.o(.text) for CANHandler
+    startup_rvmdk.o(RESET) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    can.o(i.CANReadReg) refers to can.o(i.CANGetIntNumber) for CANGetIntNumber
+    can.o(i.CANReadReg) refers to interrupt.o(i.IntDisable) for IntDisable
+    can.o(i.CANReadReg) refers to interrupt.o(i.IntEnable) for IntEnable
+    can.o(i.CANWriteDataReg) refers to can.o(i.CANWriteReg) for CANWriteReg
+    can.o(i.CANReadDataReg) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANInit) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANEnable) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANEnable) refers to can.o(i.CANWriteReg) for CANWriteReg
+    can.o(i.CANDisable) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANDisable) refers to can.o(i.CANWriteReg) for CANWriteReg
+    can.o(i.CANGetBitTiming) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANSetBitTiming) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANSetBitTiming) refers to can.o(i.CANWriteReg) for CANWriteReg
+    can.o(i.CANIntRegister) refers to can.o(i.CANGetIntNumber) for CANGetIntNumber
+    can.o(i.CANIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    can.o(i.CANIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    can.o(i.CANIntUnregister) refers to can.o(i.CANGetIntNumber) for CANGetIntNumber
+    can.o(i.CANIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    can.o(i.CANIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    can.o(i.CANIntEnable) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANIntEnable) refers to can.o(i.CANWriteReg) for CANWriteReg
+    can.o(i.CANIntDisable) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANIntDisable) refers to can.o(i.CANWriteReg) for CANWriteReg
+    can.o(i.CANIntStatus) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANIntClear) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANIntClear) refers to can.o(i.CANWriteReg) for CANWriteReg
+    can.o(i.CANRetrySet) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANRetryGet) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANStatusGet) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANErrCntrGet) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANMessageSet) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANMessageSet) refers to can.o(i.CANWriteDataReg) for CANWriteDataReg
+    can.o(i.CANMessageSet) refers to can.o(i.CANWriteReg) for CANWriteReg
+    can.o(i.CANMessageGet) refers to can.o(i.CANWriteReg) for CANWriteReg
+    can.o(i.CANMessageGet) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANMessageGet) refers to can.o(i.CANReadDataReg) for CANReadDataReg
+    can.o(i.CANMessageClear) refers to can.o(i.CANReadReg) for CANReadReg
+    can.o(i.CANMessageClear) refers to can.o(i.CANWriteReg) for CANWriteReg
+    gpio.o(i.GPIOPortIntRegister) refers to gpio.o(i.GPIOGetIntNumber) for GPIOGetIntNumber
+    gpio.o(i.GPIOPortIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    gpio.o(i.GPIOPortIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    gpio.o(i.GPIOPortIntUnregister) refers to gpio.o(i.GPIOGetIntNumber) for GPIOGetIntNumber
+    gpio.o(i.GPIOPortIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    gpio.o(i.GPIOPortIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    gpio.o(i.GPIOPinTypeCAN) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeCAN) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeComparator) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeComparator) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeGPIOInput) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeGPIOInput) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeGPIOOutput) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeGPIOOutput) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeGPIOOutputOD) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeGPIOOutputOD) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeI2C) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeI2C) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypePWM) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypePWM) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeQEI) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeQEI) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeSSI) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeSSI) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeTimer) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeTimer) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeUART) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeUART) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    interrupt.o(i.IntMasterEnable) refers to cpu_keil.o(.text) for CPUcpsie
+    interrupt.o(i.IntMasterDisable) refers to cpu_keil.o(.text) for CPUcpsid
+    interrupt.o(i.IntRegister) refers to interrupt.o(vtable) for vtable
+    interrupt.o(i.IntUnregister) refers to interrupt.o(i.IntDefaultHandler) for IntDefaultHandler
+    interrupt.o(i.IntUnregister) refers to interrupt.o(vtable) for vtable
+    interrupt.o(i.IntPriorityGroupingSet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPriorityGroupingGet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPrioritySet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPriorityGet) refers to interrupt.o(.constdata) for .constdata
+    pwm.o(i.PWMGenIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    pwm.o(i.PWMGenIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    pwm.o(i.PWMGenIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    pwm.o(i.PWMGenIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    pwm.o(i.PWMFaultIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    pwm.o(i.PWMFaultIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    pwm.o(i.PWMFaultIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    pwm.o(i.PWMFaultIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    ssi.o(i.SSIIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    ssi.o(i.SSIIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    ssi.o(i.SSIIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    ssi.o(i.SSIIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    sysctl.o(i.SysCtlPeripheralPresent) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlPeripheralReset) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlPeripheralEnable) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlPeripheralDisable) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlPeripheralSleepEnable) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlPeripheralSleepDisable) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlPeripheralDeepSleepEnable) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlPeripheralDeepSleepDisable) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    sysctl.o(i.SysCtlIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    sysctl.o(i.SysCtlIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    sysctl.o(i.SysCtlIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    sysctl.o(i.SysCtlSleep) refers to cpu_keil.o(.text) for CPUwfi
+    sysctl.o(i.SysCtlDeepSleep) refers to cpu_keil.o(.text) for CPUwfi
+    sysctl.o(i.SysCtlClockSet) refers to sysctl.o(.emb_text) for SysCtlDelay
+    sysctl.o(i.SysCtlClockGet) refers to sysctl.o(.constdata) for .constdata
+    systick.o(i.SysTickIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    systick.o(i.SysTickIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    uart.o(i.UARTConfigSetExpClk) refers to uart.o(i.UARTDisable) for UARTDisable
+    uart.o(i.UARTConfigSetExpClk) refers to uart.o(i.UARTEnable) for UARTEnable
+    uart.o(i.UARTIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    uart.o(i.UARTIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    uart.o(i.UARTIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    uart.o(i.UARTIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000F) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$00000011) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry12b.o(.ARM.Collect$$$$0000000E) for __rt_lib_shutdown_fini
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_rvmdk.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_rvmdk.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to qs_ek-lm3s2965_revc.o(.text) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to qs_ek-lm3s2965_revc.o(.text) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup_rvmdk.o(HEAP), (0 bytes).
+    Removing startup_rvmdk.o(.text), (0 bytes).
+    Removing can.o(i.CANDisable), (22 bytes).
+    Removing can.o(i.CANGetBitTiming), (62 bytes).
+    Removing can.o(i.CANIntRegister), (26 bytes).
+    Removing can.o(i.CANIntUnregister), (22 bytes).
+    Removing can.o(i.CANIntDisable), (24 bytes).
+    Removing can.o(i.CANRetrySet), (34 bytes).
+    Removing can.o(i.CANRetryGet), (18 bytes).
+    Removing can.o(i.CANErrCntrGet), (34 bytes).
+    Removing gpio.o(i.GPIOGetIntNumber), (96 bytes).
+    Removing gpio.o(i.GPIODirModeGet), (38 bytes).
+    Removing gpio.o(i.GPIOIntTypeSet), (56 bytes).
+    Removing gpio.o(i.GPIOIntTypeGet), (50 bytes).
+    Removing gpio.o(i.GPIOPadConfigGet), (122 bytes).
+    Removing gpio.o(i.GPIOPinIntEnable), (12 bytes).
+    Removing gpio.o(i.GPIOPinIntDisable), (12 bytes).
+    Removing gpio.o(i.GPIOPinIntStatus), (14 bytes).
+    Removing gpio.o(i.GPIOPinIntClear), (6 bytes).
+    Removing gpio.o(i.GPIOPortIntRegister), (26 bytes).
+    Removing gpio.o(i.GPIOPortIntUnregister), (22 bytes).
+    Removing gpio.o(i.GPIOPinTypeComparator), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeGPIOOutputOD), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeI2C), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeQEI), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeTimer), (28 bytes).
+    Removing interrupt.o(i.IntDefaultHandler), (2 bytes).
+    Removing interrupt.o(i.IntMasterEnable), (10 bytes).
+    Removing interrupt.o(i.IntMasterDisable), (10 bytes).
+    Removing interrupt.o(i.IntRegister), (48 bytes).
+    Removing interrupt.o(i.IntUnregister), (20 bytes).
+    Removing interrupt.o(i.IntPriorityGroupingSet), (28 bytes).
+    Removing interrupt.o(i.IntPriorityGroupingGet), (36 bytes).
+    Removing interrupt.o(i.IntPrioritySet), (36 bytes).
+    Removing interrupt.o(i.IntPriorityGet), (24 bytes).
+    Removing interrupt.o(.constdata), (92 bytes).
+    Removing interrupt.o(vtable), (240 bytes).
+    Removing pwm.o(i.PWMGenPeriodGet), (18 bytes).
+    Removing pwm.o(i.PWMPulseWidthGet), (30 bytes).
+    Removing pwm.o(i.PWMDeadBandEnable), (16 bytes).
+    Removing pwm.o(i.PWMDeadBandDisable), (12 bytes).
+    Removing pwm.o(i.PWMSyncTimeBase), (4 bytes).
+    Removing pwm.o(i.PWMOutputFault), (16 bytes).
+    Removing pwm.o(i.PWMGenIntRegister), (28 bytes).
+    Removing pwm.o(i.PWMGenIntUnregister), (24 bytes).
+    Removing pwm.o(i.PWMFaultIntRegister), (18 bytes).
+    Removing pwm.o(i.PWMFaultIntUnregister), (18 bytes).
+    Removing pwm.o(i.PWMGenIntTrigEnable), (10 bytes).
+    Removing pwm.o(i.PWMGenIntTrigDisable), (10 bytes).
+    Removing pwm.o(i.PWMGenIntStatus), (14 bytes).
+    Removing pwm.o(i.PWMGenIntClear), (6 bytes).
+    Removing pwm.o(i.PWMIntEnable), (8 bytes).
+    Removing pwm.o(i.PWMIntDisable), (8 bytes).
+    Removing pwm.o(i.PWMFaultIntClear), (8 bytes).
+    Removing pwm.o(i.PWMIntStatus), (12 bytes).
+    Removing ssi.o(i.SSIIntRegister), (32 bytes).
+    Removing ssi.o(i.SSIIntUnregister), (32 bytes).
+    Removing ssi.o(i.SSIIntEnable), (8 bytes).
+    Removing ssi.o(i.SSIIntDisable), (8 bytes).
+    Removing ssi.o(i.SSIIntStatus), (10 bytes).
+    Removing ssi.o(i.SSIIntClear), (4 bytes).
+    Removing ssi.o(i.SSIDataPutNonBlocking), (16 bytes).
+    Removing sysctl.o(i.SysCtlSRAMSizeGet), (20 bytes).
+    Removing sysctl.o(i.SysCtlFlashSizeGet), (20 bytes).
+    Removing sysctl.o(i.SysCtlPinPresent), (20 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralPresent), (36 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralReset), (48 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralDisable), (28 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralSleepEnable), (28 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralSleepDisable), (28 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralDeepSleepEnable), (28 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralDeepSleepDisable), (28 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralClockGating), (28 bytes).
+    Removing sysctl.o(i.SysCtlIntRegister), (20 bytes).
+    Removing sysctl.o(i.SysCtlIntUnregister), (18 bytes).
+    Removing sysctl.o(i.SysCtlIntEnable), (16 bytes).
+    Removing sysctl.o(i.SysCtlIntDisable), (16 bytes).
+    Removing sysctl.o(i.SysCtlIntClear), (12 bytes).
+    Removing sysctl.o(i.SysCtlIntStatus), (16 bytes).
+    Removing sysctl.o(i.SysCtlLDOGet), (12 bytes).
+    Removing sysctl.o(i.SysCtlLDOConfigSet), (12 bytes).
+    Removing sysctl.o(i.SysCtlReset), (16 bytes).
+    Removing sysctl.o(i.SysCtlSleep), (4 bytes).
+    Removing sysctl.o(i.SysCtlDeepSleep), (32 bytes).
+    Removing sysctl.o(i.SysCtlResetCauseGet), (12 bytes).
+    Removing sysctl.o(i.SysCtlResetCauseClear), (16 bytes).
+    Removing sysctl.o(i.SysCtlBrownOutConfigSet), (16 bytes).
+    Removing sysctl.o(i.SysCtlPWMClockGet), (24 bytes).
+    Removing sysctl.o(i.SysCtlADCSpeedSet), (40 bytes).
+    Removing sysctl.o(i.SysCtlADCSpeedGet), (16 bytes).
+    Removing sysctl.o(i.SysCtlIOSCVerificationSet), (28 bytes).
+    Removing sysctl.o(i.SysCtlMOSCVerificationSet), (28 bytes).
+    Removing sysctl.o(i.SysCtlPLLVerificationSet), (28 bytes).
+    Removing sysctl.o(i.SysCtlClkVerificationClear), (16 bytes).
+    Removing systick.o(i.SysTickDisable), (14 bytes).
+    Removing systick.o(i.SysTickIntRegister), (24 bytes).
+    Removing systick.o(i.SysTickIntUnregister), (18 bytes).
+    Removing systick.o(i.SysTickIntDisable), (14 bytes).
+    Removing systick.o(i.SysTickPeriodGet), (10 bytes).
+    Removing systick.o(i.SysTickValueGet), (8 bytes).
+    Removing uart.o(i.UARTParityModeSet), (12 bytes).
+    Removing uart.o(i.UARTParityModeGet), (8 bytes).
+    Removing uart.o(i.UARTFIFOLevelSet), (6 bytes).
+    Removing uart.o(i.UARTFIFOLevelGet), (16 bytes).
+    Removing uart.o(i.UARTConfigGetExpClk), (28 bytes).
+    Removing uart.o(i.UARTEnableSIR), (20 bytes).
+    Removing uart.o(i.UARTDisableSIR), (10 bytes).
+    Removing uart.o(i.UARTCharsAvail), (10 bytes).
+    Removing uart.o(i.UARTSpaceAvail), (10 bytes).
+    Removing uart.o(i.UARTCharGetNonBlocking), (16 bytes).
+    Removing uart.o(i.UARTCharGet), (10 bytes).
+    Removing uart.o(i.UARTCharPutNonBlocking), (16 bytes).
+    Removing uart.o(i.UARTBreakCtl), (20 bytes).
+    Removing uart.o(i.UARTIntRegister), (44 bytes).
+    Removing uart.o(i.UARTIntUnregister), (44 bytes).
+    Removing uart.o(i.UARTIntEnable), (8 bytes).
+    Removing uart.o(i.UARTIntDisable), (8 bytes).
+    Removing uart.o(i.UARTIntStatus), (10 bytes).
+    Removing uart.o(i.UARTIntClear), (4 bytes).
+    Removing cpu_keil.o(.text), (20 bytes).
+
+120 unused section(s) (total 2870 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      252  startup_rvmdk.o(RESET)
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ..\rit128x96x4.c                         0x00000000   Number         0  rit128x96x4.o ABSOLUTE
+    audio.c                                  0x00000000   Number         0  audio.o ABSOLUTE
+    can.c                                    0x00000000   Number         0  can.o ABSOLUTE
+    can_net.c                                0x00000000   Number         0  can_net.o ABSOLUTE
+    cpu_keil.S                               0x00000000   Number         0  cpu_keil.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    game.c                                   0x00000000   Number         0  game.o ABSOLUTE
+    gpio.c                                   0x00000000   Number         0  gpio.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    images.c                                 0x00000000   Number         0  images.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    interrupt.c                              0x00000000   Number         0  interrupt.o ABSOLUTE
+    pwm.c                                    0x00000000   Number         0  pwm.o ABSOLUTE
+    qs_ek-lm3s2965_revc.c                    0x00000000   Number         0  qs_ek-lm3s2965_revc.o ABSOLUTE
+    random.c                                 0x00000000   Number         0  random.o ABSOLUTE
+    screen_saver.c                           0x00000000   Number         0  screen_saver.o ABSOLUTE
+    sounds.c                                 0x00000000   Number         0  sounds.o ABSOLUTE
+    ssi.c                                    0x00000000   Number         0  ssi.o ABSOLUTE
+    startup_rvmdk.S                          0x00000000   Number         0  startup_rvmdk.o ABSOLUTE
+    sysctl.c                                 0x00000000   Number         0  sysctl.o ABSOLUTE
+    sysctl.c                                 0x00000000   Number         0  sysctl.o ABSOLUTE
+    systick.c                                0x00000000   Number         0  systick.o ABSOLUTE
+    uart.c                                   0x00000000   Number         0  uart.o ABSOLUTE
+    NmiSR                                    0x000000f5   Thumb Code     0  startup_rvmdk.o(RESET)
+    FaultISR                                 0x000000f7   Thumb Code     0  startup_rvmdk.o(RESET)
+    IntDefaultHandler                        0x000000f9   Thumb Code     0  startup_rvmdk.o(RESET)
+    .ARM.Collect$$$$00000000                 0x000000fc   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x000000fc   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x00000100   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x00000104   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x00000104   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x00000104   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000E                 0x0000010c   Section        4  entry12b.o(.ARM.Collect$$$$0000000E)
+    .ARM.Collect$$$$0000000F                 0x00000110   Section        0  entry10a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00000011                 0x00000110   Section        0  entry11a.o(.ARM.Collect$$$$00000011)
+    .ARM.Collect$$$$00002712                 0x00000110   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x00000110   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .emb_text                                0x00000114   Section        6  sysctl.o(.emb_text)
+    .text                                    0x0000011c   Section        0  audio.o(.text)
+    AudioMute                                0x0000011d   Thumb Code    54  audio.o(.text)
+    .text                                    0x000002d8   Section        0  can_net.o(.text)
+    .text                                    0x00000528   Section        0  game.o(.text)
+    GenerateMaze                             0x00000529   Thumb Code   632  game.o(.text)
+    DrawMaze                                 0x000007a1   Thumb Code   194  game.o(.text)
+    DrawCheat                                0x00000863   Thumb Code   206  game.o(.text)
+    MoveMonsters                             0x00000931   Thumb Code   340  game.o(.text)
+    DrawMonsters                             0x00000a85   Thumb Code   250  game.o(.text)
+    AddExplosion                             0x00000b7f   Thumb Code    52  game.o(.text)
+    SetBulletDir                             0x00000bb3   Thumb Code   148  game.o(.text)
+    DrawBullets                              0x00000c47   Thumb Code   870  game.o(.text)
+    DrawPlayer                               0x00000fad   Thumb Code   258  game.o(.text)
+    DrawExplosions                           0x000010af   Thumb Code   298  game.o(.text)
+    DrawNumber                               0x00001787   Thumb Code   124  game.o(.text)
+    .text                                    0x0000182c   Section        0  qs_ek-lm3s2965_revc.o(.text)
+    Delay                                    0x000018d5   Thumb Code    38  qs_ek-lm3s2965_revc.o(.text)
+    DisplayLogo                              0x000018fb   Thumb Code   312  qs_ek-lm3s2965_revc.o(.text)
+    .text                                    0x00001bfc   Section        0  random.o(.text)
+    .text                                    0x00001d8c   Section        0  rit128x96x4.o(.text)
+    RITWriteCommand                          0x00001d8d   Thumb Code    54  rit128x96x4.o(.text)
+    RITWriteData                             0x00001dc3   Thumb Code    54  rit128x96x4.o(.text)
+    .text                                    0x000020c0   Section        0  screen_saver.o(.text)
+    ScreenSaverLine                          0x000020c1   Thumb Code   206  screen_saver.o(.text)
+    .text                                    0x00002530   Section       36  init.o(.text)
+    i.CANEnable                              0x00002554   Section        0  can.o(i.CANEnable)
+    i.CANGetIntNumber                        0x0000256c   Section        0  can.o(i.CANGetIntNumber)
+    i.CANInit                                0x00002594   Section        0  can.o(i.CANInit)
+    i.CANIntClear                            0x00002622   Section        0  can.o(i.CANIntClear)
+    i.CANIntEnable                           0x00002668   Section        0  can.o(i.CANIntEnable)
+    i.CANIntStatus                           0x00002680   Section        0  can.o(i.CANIntStatus)
+    i.CANMessageClear                        0x000026b2   Section        0  can.o(i.CANMessageClear)
+    i.CANMessageGet                          0x000026f6   Section        0  can.o(i.CANMessageGet)
+    i.CANMessageSet                          0x00002862   Section        0  can.o(i.CANMessageSet)
+    i.CANReadDataReg                         0x00002a0e   Section        0  can.o(i.CANReadDataReg)
+    i.CANReadReg                             0x00002a3c   Section        0  can.o(i.CANReadReg)
+    i.CANSetBitTiming                        0x00002a7c   Section        0  can.o(i.CANSetBitTiming)
+    i.CANStatusGet                           0x00002af2   Section        0  can.o(i.CANStatusGet)
+    i.CANWriteDataReg                        0x00002b5a   Section        0  can.o(i.CANWriteDataReg)
+    i.CANWriteReg                            0x00002b82   Section        0  can.o(i.CANWriteReg)
+    i.GPIODirModeSet                         0x00002b8e   Section        0  gpio.o(i.GPIODirModeSet)
+    i.GPIOPadConfigSet                       0x00002bb4   Section        0  gpio.o(i.GPIOPadConfigSet)
+    i.GPIOPinRead                            0x00002c48   Section        0  gpio.o(i.GPIOPinRead)
+    i.GPIOPinTypeCAN                         0x00002c4e   Section        0  gpio.o(i.GPIOPinTypeCAN)
+    i.GPIOPinTypeGPIOInput                   0x00002c6a   Section        0  gpio.o(i.GPIOPinTypeGPIOInput)
+    i.GPIOPinTypeGPIOOutput                  0x00002c86   Section        0  gpio.o(i.GPIOPinTypeGPIOOutput)
+    i.GPIOPinTypePWM                         0x00002ca2   Section        0  gpio.o(i.GPIOPinTypePWM)
+    i.GPIOPinTypeSSI                         0x00002cbe   Section        0  gpio.o(i.GPIOPinTypeSSI)
+    i.GPIOPinTypeUART                        0x00002cda   Section        0  gpio.o(i.GPIOPinTypeUART)
+    i.GPIOPinWrite                           0x00002cf6   Section        0  gpio.o(i.GPIOPinWrite)
+    i.IntDisable                             0x00002cfc   Section        0  interrupt.o(i.IntDisable)
+    i.IntEnable                              0x00002d5c   Section        0  interrupt.o(i.IntEnable)
+    i.PWMGenConfigure                        0x00002dbc   Section        0  pwm.o(i.PWMGenConfigure)
+    i.PWMGenDisable                          0x00002de0   Section        0  pwm.o(i.PWMGenDisable)
+    i.PWMGenEnable                           0x00002dea   Section        0  pwm.o(i.PWMGenEnable)
+    i.PWMGenPeriodSet                        0x00002df4   Section        0  pwm.o(i.PWMGenPeriodSet)
+    i.PWMOutputInvert                        0x00002e08   Section        0  pwm.o(i.PWMOutputInvert)
+    i.PWMOutputState                         0x00002e18   Section        0  pwm.o(i.PWMOutputState)
+    i.PWMPulseWidthSet                       0x00002e28   Section        0  pwm.o(i.PWMPulseWidthSet)
+    i.PWMSyncUpdate                          0x00002e46   Section        0  pwm.o(i.PWMSyncUpdate)
+    i.SSIConfigSetExpClk                     0x00002e4a   Section        0  ssi.o(i.SSIConfigSetExpClk)
+    i.SSIDataGet                             0x00002e88   Section        0  ssi.o(i.SSIDataGet)
+    i.SSIDataGetNonBlocking                  0x00002e94   Section        0  ssi.o(i.SSIDataGetNonBlocking)
+    i.SSIDataPut                             0x00002ea6   Section        0  ssi.o(i.SSIDataPut)
+    i.SSIDisable                             0x00002eb0   Section        0  ssi.o(i.SSIDisable)
+    i.SSIEnable                              0x00002eba   Section        0  ssi.o(i.SSIEnable)
+    i.SysCtlClockGet                         0x00002ec4   Section      280  sysctl.o(i.SysCtlClockGet)
+    i.SysCtlClockSet                         0x00002fdc   Section      284  sysctl.o(i.SysCtlClockSet)
+    i.SysCtlLDOSet                           0x000030f8   Section       12  sysctl.o(i.SysCtlLDOSet)
+    i.SysCtlPWMClockSet                      0x00003104   Section       20  sysctl.o(i.SysCtlPWMClockSet)
+    i.SysCtlPeripheralEnable                 0x00003118   Section       28  sysctl.o(i.SysCtlPeripheralEnable)
+    i.SysTickEnable                          0x00003134   Section        0  systick.o(i.SysTickEnable)
+    i.SysTickIntEnable                       0x00003142   Section        0  systick.o(i.SysTickIntEnable)
+    i.SysTickPeriodSet                       0x00003150   Section        0  systick.o(i.SysTickPeriodSet)
+    i.UARTCharPut                            0x0000315a   Section        0  uart.o(i.UARTCharPut)
+    i.UARTConfigSetExpClk                    0x00003164   Section        0  uart.o(i.UARTConfigSetExpClk)
+    i.UARTDisable                            0x00003194   Section        0  uart.o(i.UARTDisable)
+    i.UARTEnable                             0x000031ae   Section        0  uart.o(i.UARTEnable)
+    i.__scatterload_copy                     0x000031c2   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x000031d0   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x000031d2   Section       14  handlers.o(i.__scatterload_zeroinit)
+    .constdata                               0x000031e0   Section        4  can_net.o(.constdata)
+    .constdata                               0x000031e4   Section     2520  images.o(.constdata)
+    .constdata                               0x00003bbc   Section     2560  images.o(.constdata)
+    .constdata                               0x000045bc   Section     1024  images.o(.constdata)
+    .constdata                               0x000049bc   Section      481  images.o(.constdata)
+    .constdata                               0x00004b9d   Section      286  images.o(.constdata)
+    .constdata                               0x00004cbb   Section       26  images.o(.constdata)
+    .constdata                               0x00004cd5   Section      520  images.o(.constdata)
+    .constdata                               0x00004edd   Section     4032  images.o(.constdata)
+    .constdata                               0x00005e9d   Section       14  images.o(.constdata)
+    .constdata                               0x00005eab   Section       10  images.o(.constdata)
+    .constdata                               0x00005eb5   Section        6  images.o(.constdata)
+    .constdata                               0x00005ebb   Section       10  images.o(.constdata)
+    .constdata                               0x00005ec5   Section        6  images.o(.constdata)
+    .constdata                               0x00005ecb   Section        6  images.o(.constdata)
+    .constdata                               0x00005ed1   Section        6  images.o(.constdata)
+    .constdata                               0x00005ed7   Section        6  images.o(.constdata)
+    .constdata                               0x00005edd   Section       34  images.o(.constdata)
+    .constdata                               0x00005eff   Section       10  images.o(.constdata)
+    .constdata                               0x00005f09   Section       12  images.o(.constdata)
+    .constdata                               0x00005f15   Section      571  rit128x96x4.o(.constdata)
+    g_pucRIT128x96x4VerticalInc              0x00005f15   Data           2  rit128x96x4.o(.constdata)
+    g_pucRIT128x96x4HorizontalInc            0x00005f17   Data           2  rit128x96x4.o(.constdata)
+    pucCommand1                              0x00005f19   Data           2  rit128x96x4.o(.constdata)
+    pucCommand1                              0x00005f1b   Data           3  rit128x96x4.o(.constdata)
+    pucCommand2                              0x00005f1e   Data           3  rit128x96x4.o(.constdata)
+    g_pucFont                                0x00005f21   Data         480  rit128x96x4.o(.constdata)
+    g_pucRIT128x96x4Init                     0x00006101   Data          79  rit128x96x4.o(.constdata)
+    .constdata                               0x00006150   Section      160  sounds.o(.constdata)
+    .constdata                               0x000061f0   Section       48  sounds.o(.constdata)
+    .constdata                               0x00006220   Section       56  sounds.o(.constdata)
+    .constdata                               0x00006258   Section       72  sounds.o(.constdata)
+    .constdata                               0x000062a0   Section       60  sounds.o(.constdata)
+    .constdata                               0x000062dc   Section      200  sounds.o(.constdata)
+    .constdata                               0x000063a4   Section      200  sounds.o(.constdata)
+    .constdata                               0x0000646c   Section      300  sounds.o(.constdata)
+    .constdata                               0x00006598   Section      128  sysctl.o(.constdata)
+    g_pulDCRegs                              0x00006598   Data          16  sysctl.o(.constdata)
+    g_pulSRCRRegs                            0x000065a8   Data          12  sysctl.o(.constdata)
+    g_pulRCGCRegs                            0x000065b4   Data          12  sysctl.o(.constdata)
+    g_pulSCGCRegs                            0x000065c0   Data          12  sysctl.o(.constdata)
+    g_pulDCGCRegs                            0x000065cc   Data          12  sysctl.o(.constdata)
+    g_pulXtals                               0x000065d8   Data          64  sysctl.o(.constdata)
+    .data                                    0x20000000   Section       20  audio.o(.data)
+    g_ucVolume                               0x20000000   Data           1  audio.o(.data)
+    g_usMusicLength                          0x20000002   Data           2  audio.o(.data)
+    g_usMusicCount                           0x20000004   Data           2  audio.o(.data)
+    g_usSoundLength                          0x20000006   Data           2  audio.o(.data)
+    g_usSoundCount                           0x20000008   Data           2  audio.o(.data)
+    g_pusMusic                               0x2000000c   Data           4  audio.o(.data)
+    g_pusSoundEffect                         0x20000010   Data           4  audio.o(.data)
+    .data                                    0x20000014   Section       72  can_net.o(.data)
+    ucVerCmd                                 0x20000015   Data           1  can_net.o(.data)
+    g_pucButtonMsg                           0x20000016   Data           2  can_net.o(.data)
+    g_ulFlags                                0x20000018   Data           4  can_net.o(.data)
+    .data                                    0x2000005c   Section       52  game.o(.data)
+    g_ucDirection                            0x2000005c   Data           1  game.o(.data)
+    g_ucCount                                0x2000005d   Data           1  game.o(.data)
+    g_pucBulletDir                           0x20000068   Data           4  game.o(.data)
+    g_pucExplosionCount                      0x2000006c   Data           4  game.o(.data)
+    g_pusBulletX                             0x20000070   Data           8  game.o(.data)
+    g_pusBulletY                             0x20000078   Data           8  game.o(.data)
+    g_pusExplosionX                          0x20000080   Data           8  game.o(.data)
+    g_pusExplosionY                          0x20000088   Data           8  game.o(.data)
+    .data                                    0x20000090   Section       20  qs_ek-lm3s2965_revc.o(.data)
+    g_ucScreenUpdateCount                    0x20000090   Data           1  qs_ek-lm3s2965_revc.o(.data)
+    g_ucAppUpdateCount                       0x20000091   Data           1  qs_ek-lm3s2965_revc.o(.data)
+    g_ucSwitchClockA                         0x20000093   Data           1  qs_ek-lm3s2965_revc.o(.data)
+    g_ucSwitchClockB                         0x20000094   Data           1  qs_ek-lm3s2965_revc.o(.data)
+    g_ulTickCount                            0x20000098   Data           4  qs_ek-lm3s2965_revc.o(.data)
+    .data                                    0x200000a4   Section        8  random.o(.data)
+    g_ulRandomIndex                          0x200000a4   Data           4  random.o(.data)
+    g_ulRandomSeed                           0x200000a8   Data           4  random.o(.data)
+    .data                                    0x200000ac   Section        9  rit128x96x4.o(.data)
+    g_bSSIEnabled                            0x200000ac   Data           1  rit128x96x4.o(.data)
+    g_pucBuffer                              0x200000ad   Data           8  rit128x96x4.o(.data)
+    .data                                    0x200000b5   Section        4  screen_saver.o(.data)
+    g_cScreenDeltaX1                         0x200000b5   Data           1  screen_saver.o(.data)
+    g_cScreenDeltaY1                         0x200000b6   Data           1  screen_saver.o(.data)
+    g_cScreenDeltaX2                         0x200000b7   Data           1  screen_saver.o(.data)
+    g_cScreenDeltaY2                         0x200000b8   Data           1  screen_saver.o(.data)
+    .bss                                     0x200000bc   Section       80  can_net.o(.bss)
+    .bss                                     0x2000010c   Section    12524  game.o(.bss)
+    g_pucMonsterCount                        0x2000029c   Data         100  game.o(.bss)
+    g_pcLeft                                 0x200031a2   Data          43  game.o(.bss)
+    g_pcRight                                0x200031cd   Data          43  game.o(.bss)
+    .bss                                     0x200031f8   Section     6144  qs_ek-lm3s2965_revc.o(.bss)
+    .bss                                     0x200049f8   Section       64  random.o(.bss)
+    g_pulRandomEntropy                       0x200049f8   Data          64  random.o(.bss)
+    .bss                                     0x20004a38   Section      120  screen_saver.o(.bss)
+    g_pucScreenLinesX1                       0x20004a38   Data          30  screen_saver.o(.bss)
+    g_pucScreenLinesY1                       0x20004a56   Data          30  screen_saver.o(.bss)
+    g_pucScreenLinesX2                       0x20004a74   Data          30  screen_saver.o(.bss)
+    g_pucScreenLinesY2                       0x20004a92   Data          30  screen_saver.o(.bss)
+    STACK                                    0x20004ab0   Section      512  startup_rvmdk.o(STACK)
+    StackMem                                 0x20004ab0   Data           0  startup_rvmdk.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  qs_ek-lm3s2965_revc.o ABSOLUTE
+    __Vectors                                0x00000000   Data           0  startup_rvmdk.o(RESET)
+    __arm_fini_                               - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    Reset_Handler                            0x000000f1   Thumb Code     0  startup_rvmdk.o(RESET)
+    __main                                   0x000000fd   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x000000fd   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x00000101   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x00000105   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x00000105   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x00000105   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x00000105   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_lib_shutdown_fini                   0x0000010d   Thumb Code     0  entry12b.o(.ARM.Collect$$$$0000000E)
+    __rt_final_cpp                           0x00000111   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000F)
+    __rt_final_exit                          0x00000111   Thumb Code     0  entry11a.o(.ARM.Collect$$$$00000011)
+    SysCtlDelay                              0x00000115   Thumb Code     6  sysctl.o(.emb_text)
+    AudioVolume                              0x00000153   Thumb Code    60  audio.o(.text)
+    AudioVolumeUp                            0x0000018f   Thumb Code    32  audio.o(.text)
+    AudioVolumeDown                          0x000001af   Thumb Code    30  audio.o(.text)
+    AudioVolumeGet                           0x000001cd   Thumb Code     6  audio.o(.text)
+    AudioHandler                             0x000001d3   Thumb Code   150  audio.o(.text)
+    AudioOff                                 0x00000269   Thumb Code    16  audio.o(.text)
+    AudioOn                                  0x00000279   Thumb Code    48  audio.o(.text)
+    AudioPlaySong                            0x000002a9   Thumb Code    16  audio.o(.text)
+    AudioPlaySound                           0x000002b9   Thumb Code    16  audio.o(.text)
+    CANMain                                  0x000002d9   Thumb Code    92  can_net.o(.text)
+    CANGetTargetVersion                      0x00000335   Thumb Code    82  can_net.o(.text)
+    CANUpdateTargetLED                       0x00000387   Thumb Code    44  can_net.o(.text)
+    CANConfigureNetwork                      0x000003b3   Thumb Code   102  can_net.o(.text)
+    CANHandler                               0x00000419   Thumb Code   174  can_net.o(.text)
+    CANConfigure                             0x000004c7   Thumb Code    68  can_net.o(.text)
+    MainScreen                               0x000011d9   Thumb Code   270  game.o(.text)
+    PlayGame                                 0x000012e7   Thumb Code  1184  game.o(.text)
+    SysTickIntHandler                        0x0000182d   Thumb Code   168  qs_ek-lm3s2965_revc.o(.text)
+    main                                     0x00001a33   Thumb Code   402  qs_ek-lm3s2965_revc.o(.text)
+    RandomAddEntropy                         0x00001bfd   Thumb Code    18  random.o(.text)
+    RandomSeed                               0x00001c0f   Thumb Code   332  random.o(.text)
+    RandomNumber                             0x00001d5b   Thumb Code    16  random.o(.text)
+    RIT128x96x4Clear                         0x00001df9   Thumb Code    68  rit128x96x4.o(.text)
+    RIT128x96x4StringDraw                    0x00001e3d   Thumb Code   212  rit128x96x4.o(.text)
+    RIT128x96x4ImageDraw                     0x00001f11   Thumb Code    98  rit128x96x4.o(.text)
+    RIT128x96x4Enable                        0x00001f73   Thumb Code    84  rit128x96x4.o(.text)
+    RIT128x96x4Disable                       0x00001fc7   Thumb Code    64  rit128x96x4.o(.text)
+    RIT128x96x4Init                          0x00002007   Thumb Code   118  rit128x96x4.o(.text)
+    RIT128x96x4DisplayOn                     0x0000207d   Thumb Code    30  rit128x96x4.o(.text)
+    RIT128x96x4DisplayOff                    0x0000209b   Thumb Code     8  rit128x96x4.o(.text)
+    ScreenSaver                              0x0000218f   Thumb Code   930  screen_saver.o(.text)
+    __scatterload                            0x00002531   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x00002531   Thumb Code     0  init.o(.text)
+    CANEnable                                0x00002555   Thumb Code    22  can.o(i.CANEnable)
+    CANGetIntNumber                          0x0000256d   Thumb Code    36  can.o(i.CANGetIntNumber)
+    CANInit                                  0x00002595   Thumb Code   142  can.o(i.CANInit)
+    CANIntClear                              0x00002623   Thumb Code    70  can.o(i.CANIntClear)
+    CANIntEnable                             0x00002669   Thumb Code    24  can.o(i.CANIntEnable)
+    CANIntStatus                             0x00002681   Thumb Code    50  can.o(i.CANIntStatus)
+    CANMessageClear                          0x000026b3   Thumb Code    68  can.o(i.CANMessageClear)
+    CANMessageGet                            0x000026f7   Thumb Code   364  can.o(i.CANMessageGet)
+    CANMessageSet                            0x00002863   Thumb Code   428  can.o(i.CANMessageSet)
+    CANReadDataReg                           0x00002a0f   Thumb Code    44  can.o(i.CANReadDataReg)
+    CANReadReg                               0x00002a3d   Thumb Code    60  can.o(i.CANReadReg)
+    CANSetBitTiming                          0x00002a7d   Thumb Code   118  can.o(i.CANSetBitTiming)
+    CANStatusGet                             0x00002af3   Thumb Code   104  can.o(i.CANStatusGet)
+    CANWriteDataReg                          0x00002b5b   Thumb Code    40  can.o(i.CANWriteDataReg)
+    CANWriteReg                              0x00002b83   Thumb Code    12  can.o(i.CANWriteReg)
+    GPIODirModeSet                           0x00002b8f   Thumb Code    38  gpio.o(i.GPIODirModeSet)
+    GPIOPadConfigSet                         0x00002bb5   Thumb Code   148  gpio.o(i.GPIOPadConfigSet)
+    GPIOPinRead                              0x00002c49   Thumb Code     6  gpio.o(i.GPIOPinRead)
+    GPIOPinTypeCAN                           0x00002c4f   Thumb Code    28  gpio.o(i.GPIOPinTypeCAN)
+    GPIOPinTypeGPIOInput                     0x00002c6b   Thumb Code    28  gpio.o(i.GPIOPinTypeGPIOInput)
+    GPIOPinTypeGPIOOutput                    0x00002c87   Thumb Code    28  gpio.o(i.GPIOPinTypeGPIOOutput)
+    GPIOPinTypePWM                           0x00002ca3   Thumb Code    28  gpio.o(i.GPIOPinTypePWM)
+    GPIOPinTypeSSI                           0x00002cbf   Thumb Code    28  gpio.o(i.GPIOPinTypeSSI)
+    GPIOPinTypeUART                          0x00002cdb   Thumb Code    28  gpio.o(i.GPIOPinTypeUART)
+    GPIOPinWrite                             0x00002cf7   Thumb Code     6  gpio.o(i.GPIOPinWrite)
+    IntDisable                               0x00002cfd   Thumb Code    96  interrupt.o(i.IntDisable)
+    IntEnable                                0x00002d5d   Thumb Code    96  interrupt.o(i.IntEnable)
+    PWMGenConfigure                          0x00002dbd   Thumb Code    36  pwm.o(i.PWMGenConfigure)
+    PWMGenDisable                            0x00002de1   Thumb Code    10  pwm.o(i.PWMGenDisable)
+    PWMGenEnable                             0x00002deb   Thumb Code    10  pwm.o(i.PWMGenEnable)
+    PWMGenPeriodSet                          0x00002df5   Thumb Code    20  pwm.o(i.PWMGenPeriodSet)
+    PWMOutputInvert                          0x00002e09   Thumb Code    16  pwm.o(i.PWMOutputInvert)
+    PWMOutputState                           0x00002e19   Thumb Code    16  pwm.o(i.PWMOutputState)
+    PWMPulseWidthSet                         0x00002e29   Thumb Code    30  pwm.o(i.PWMPulseWidthSet)
+    PWMSyncUpdate                            0x00002e47   Thumb Code     4  pwm.o(i.PWMSyncUpdate)
+    SSIConfigSetExpClk                       0x00002e4b   Thumb Code    62  ssi.o(i.SSIConfigSetExpClk)
+    SSIDataGet                               0x00002e89   Thumb Code    12  ssi.o(i.SSIDataGet)
+    SSIDataGetNonBlocking                    0x00002e95   Thumb Code    18  ssi.o(i.SSIDataGetNonBlocking)
+    SSIDataPut                               0x00002ea7   Thumb Code    10  ssi.o(i.SSIDataPut)
+    SSIDisable                               0x00002eb1   Thumb Code    10  ssi.o(i.SSIDisable)
+    SSIEnable                                0x00002ebb   Thumb Code    10  ssi.o(i.SSIEnable)
+    SysCtlClockGet                           0x00002ec5   Thumb Code   256  sysctl.o(i.SysCtlClockGet)
+    SysCtlClockSet                           0x00002fdd   Thumb Code   268  sysctl.o(i.SysCtlClockSet)
+    SysCtlLDOSet                             0x000030f9   Thumb Code     6  sysctl.o(i.SysCtlLDOSet)
+    SysCtlPWMClockSet                        0x00003105   Thumb Code    14  sysctl.o(i.SysCtlPWMClockSet)
+    SysCtlPeripheralEnable                   0x00003119   Thumb Code    24  sysctl.o(i.SysCtlPeripheralEnable)
+    SysTickEnable                            0x00003135   Thumb Code    14  systick.o(i.SysTickEnable)
+    SysTickIntEnable                         0x00003143   Thumb Code    14  systick.o(i.SysTickIntEnable)
+    SysTickPeriodSet                         0x00003151   Thumb Code    10  systick.o(i.SysTickPeriodSet)
+    UARTCharPut                              0x0000315b   Thumb Code    10  uart.o(i.UARTCharPut)
+    UARTConfigSetExpClk                      0x00003165   Thumb Code    48  uart.o(i.UARTConfigSetExpClk)
+    UARTDisable                              0x00003195   Thumb Code    26  uart.o(i.UARTDisable)
+    UARTEnable                               0x000031af   Thumb Code    20  uart.o(i.UARTEnable)
+    __scatterload_copy                       0x000031c3   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x000031d1   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x000031d3   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    g_ulVersion                              0x000031e0   Data           4  can_net.o(.constdata)
+    g_pucLMILogo                             0x000031e4   Data        2520  images.o(.constdata)
+    g_pucKeilLogo                            0x00003bbc   Data        2560  images.o(.constdata)
+    g_pucPlay                                0x000045bc   Data        1024  images.o(.constdata)
+    g_pucGameOver                            0x000049bc   Data         481  images.o(.constdata)
+    g_pucScore                               0x00004b9d   Data         286  images.o(.constdata)
+    g_pucDot                                 0x00004cbb   Data          26  images.o(.constdata)
+    g_ppucDigits                             0x00004cd5   Data         520  images.o(.constdata)
+    g_ppucSprites                            0x00004edd   Data        4032  images.o(.constdata)
+    g_pucPlayerStandingDown                  0x00005e9d   Data          14  images.o(.constdata)
+    g_pucPlayerWalkingDown                   0x00005eab   Data          10  images.o(.constdata)
+    g_pucPlayerStandingUp                    0x00005eb5   Data           6  images.o(.constdata)
+    g_pucPlayerWalkingUp                     0x00005ebb   Data          10  images.o(.constdata)
+    g_pucPlayerStandingLeft                  0x00005ec5   Data           6  images.o(.constdata)
+    g_pucPlayerWalkingLeft                   0x00005ecb   Data           6  images.o(.constdata)
+    g_pucPlayerStandingRight                 0x00005ed1   Data           6  images.o(.constdata)
+    g_pucPlayerWalkingRight                  0x00005ed7   Data           6  images.o(.constdata)
+    g_pucPlayerDying                         0x00005edd   Data          34  images.o(.constdata)
+    g_pucMonster                             0x00005eff   Data          10  images.o(.constdata)
+    g_pucExplosion                           0x00005f09   Data          12  images.o(.constdata)
+    g_pusIntro                               0x00006150   Data         160  sounds.o(.constdata)
+    g_pusStartOfGame                         0x000061f0   Data          48  sounds.o(.constdata)
+    g_pusEndOfMaze                           0x00006220   Data          56  sounds.o(.constdata)
+    g_pusEndOfGame                           0x00006258   Data          72  sounds.o(.constdata)
+    g_pusFireEffect                          0x000062a0   Data          60  sounds.o(.constdata)
+    g_pusWallEffect                          0x000062dc   Data         200  sounds.o(.constdata)
+    g_pusMonsterEffect                       0x000063a4   Data         200  sounds.o(.constdata)
+    g_pusPlayerEffect                        0x0000646c   Data         300  sounds.o(.constdata)
+    Region$$Table$$Base                      0x00006618   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00006638   Number         0  anon$$obj.o(Region$$Table)
+    g_ucLEDLevel                             0x20000014   Data           1  can_net.o(.data)
+    CANBitClkSettings                        0x2000001c   Data          64  can_net.o(.data)
+    g_usPlayerX                              0x2000005e   Data           2  game.o(.data)
+    g_usPlayerY                              0x20000060   Data           2  game.o(.data)
+    g_ulScore                                0x20000064   Data           4  game.o(.data)
+    g_ucSwitches                             0x20000092   Data           1  qs_ek-lm3s2965_revc.o(.data)
+    g_ulFlags                                0x2000009c   Data           4  qs_ek-lm3s2965_revc.o(.data)
+    g_ulSystemClock                          0x200000a0   Data           4  qs_ek-lm3s2965_revc.o(.data)
+    g_MsgObjectRx                            0x200000bc   Data          20  can_net.o(.bss)
+    g_MsgObjectTx                            0x200000d0   Data          20  can_net.o(.bss)
+    g_MsgObjectLED                           0x200000e4   Data          20  can_net.o(.bss)
+    g_MsgObjectButton                        0x200000f8   Data          20  can_net.o(.bss)
+    g_pusMonsterX                            0x2000010c   Data         200  game.o(.bss)
+    g_pusMonsterY                            0x200001d4   Data         200  game.o(.bss)
+    g_ppcMaze                                0x20000300   Data       11938  game.o(.bss)
+    g_pucFrame                               0x200031f8   Data        6144  qs_ek-lm3s2965_revc.o(.bss)
+    __initial_sp                             0x20004cb0   Data           0  startup_rvmdk.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000000f1
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x000066f4, Max: 0x00040000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00006638, Max: 0x00040000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x000000fc   Code   RO          284  * RESET               startup_rvmdk.o
+    0x000000fc   0x000000fc   0x00000000   Code   RO         1595  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x000000fc   0x000000fc   0x00000004   Code   RO         1598    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x00000100   0x00000100   0x00000004   Code   RO         1601    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x00000104   0x00000104   0x00000000   Code   RO         1603    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x00000104   0x00000104   0x00000000   Code   RO         1605    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x00000104   0x00000104   0x00000008   Code   RO         1606    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x0000010c   0x0000010c   0x00000004   Code   RO         1613    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
+    0x00000110   0x00000110   0x00000000   Code   RO         1608    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
+    0x00000110   0x00000110   0x00000000   Code   RO         1610    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
+    0x00000110   0x00000110   0x00000004   Code   RO         1599    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x00000114   0x00000114   0x00000006   Code   RO         1067    .emb_text           driverlib.lib(sysctl.o)
+    0x0000011a   0x0000011a   0x00000002   PAD
+    0x0000011c   0x0000011c   0x000001bc   Code   RO            1    .text               audio.o
+    0x000002d8   0x000002d8   0x00000250   Code   RO           36    .text               can_net.o
+    0x00000528   0x00000528   0x00001304   Code   RO           83    .text               game.o
+    0x0000182c   0x0000182c   0x000003d0   Code   RO          153    .text               qs_ek-lm3s2965_revc.o
+    0x00001bfc   0x00001bfc   0x00000190   Code   RO          191    .text               random.o
+    0x00001d8c   0x00001d8c   0x00000334   Code   RO          206    .text               rit128x96x4.o
+    0x000020c0   0x000020c0   0x00000470   Code   RO          248    .text               screen_saver.o
+    0x00002530   0x00002530   0x00000024   Code   RO         1614    .text               mc_w.l(init.o)
+    0x00002554   0x00002554   0x00000016   Code   RO          295    i.CANEnable         driverlib.lib(can.o)
+    0x0000256a   0x0000256a   0x00000002   PAD
+    0x0000256c   0x0000256c   0x00000028   Code   RO          289    i.CANGetIntNumber   driverlib.lib(can.o)
+    0x00002594   0x00002594   0x0000008e   Code   RO          294    i.CANInit           driverlib.lib(can.o)
+    0x00002622   0x00002622   0x00000046   Code   RO          304    i.CANIntClear       driverlib.lib(can.o)
+    0x00002668   0x00002668   0x00000018   Code   RO          301    i.CANIntEnable      driverlib.lib(can.o)
+    0x00002680   0x00002680   0x00000032   Code   RO          303    i.CANIntStatus      driverlib.lib(can.o)
+    0x000026b2   0x000026b2   0x00000044   Code   RO          311    i.CANMessageClear   driverlib.lib(can.o)
+    0x000026f6   0x000026f6   0x0000016c   Code   RO          310    i.CANMessageGet     driverlib.lib(can.o)
+    0x00002862   0x00002862   0x000001ac   Code   RO          309    i.CANMessageSet     driverlib.lib(can.o)
+    0x00002a0e   0x00002a0e   0x0000002c   Code   RO          293    i.CANReadDataReg    driverlib.lib(can.o)
+    0x00002a3a   0x00002a3a   0x00000002   PAD
+    0x00002a3c   0x00002a3c   0x00000040   Code   RO          290    i.CANReadReg        driverlib.lib(can.o)
+    0x00002a7c   0x00002a7c   0x00000076   Code   RO          298    i.CANSetBitTiming   driverlib.lib(can.o)
+    0x00002af2   0x00002af2   0x00000068   Code   RO          307    i.CANStatusGet      driverlib.lib(can.o)
+    0x00002b5a   0x00002b5a   0x00000028   Code   RO          292    i.CANWriteDataReg   driverlib.lib(can.o)
+    0x00002b82   0x00002b82   0x0000000c   Code   RO          291    i.CANWriteReg       driverlib.lib(can.o)
+    0x00002b8e   0x00002b8e   0x00000026   Code   RO          484    i.GPIODirModeSet    driverlib.lib(gpio.o)
+    0x00002bb4   0x00002bb4   0x00000094   Code   RO          488    i.GPIOPadConfigSet  driverlib.lib(gpio.o)
+    0x00002c48   0x00002c48   0x00000006   Code   RO          496    i.GPIOPinRead       driverlib.lib(gpio.o)
+    0x00002c4e   0x00002c4e   0x0000001c   Code   RO          498    i.GPIOPinTypeCAN    driverlib.lib(gpio.o)
+    0x00002c6a   0x00002c6a   0x0000001c   Code   RO          500    i.GPIOPinTypeGPIOInput  driverlib.lib(gpio.o)
+    0x00002c86   0x00002c86   0x0000001c   Code   RO          501    i.GPIOPinTypeGPIOOutput  driverlib.lib(gpio.o)
+    0x00002ca2   0x00002ca2   0x0000001c   Code   RO          504    i.GPIOPinTypePWM    driverlib.lib(gpio.o)
+    0x00002cbe   0x00002cbe   0x0000001c   Code   RO          506    i.GPIOPinTypeSSI    driverlib.lib(gpio.o)
+    0x00002cda   0x00002cda   0x0000001c   Code   RO          508    i.GPIOPinTypeUART   driverlib.lib(gpio.o)
+    0x00002cf6   0x00002cf6   0x00000006   Code   RO          497    i.GPIOPinWrite      driverlib.lib(gpio.o)
+    0x00002cfc   0x00002cfc   0x00000060   Code   RO          688    i.IntDisable        driverlib.lib(interrupt.o)
+    0x00002d5c   0x00002d5c   0x00000060   Code   RO          687    i.IntEnable         driverlib.lib(interrupt.o)
+    0x00002dbc   0x00002dbc   0x00000024   Code   RO          770    i.PWMGenConfigure   driverlib.lib(pwm.o)
+    0x00002de0   0x00002de0   0x0000000a   Code   RO          774    i.PWMGenDisable     driverlib.lib(pwm.o)
+    0x00002dea   0x00002dea   0x0000000a   Code   RO          773    i.PWMGenEnable      driverlib.lib(pwm.o)
+    0x00002df4   0x00002df4   0x00000014   Code   RO          771    i.PWMGenPeriodSet   driverlib.lib(pwm.o)
+    0x00002e08   0x00002e08   0x00000010   Code   RO          782    i.PWMOutputInvert   driverlib.lib(pwm.o)
+    0x00002e18   0x00002e18   0x00000010   Code   RO          781    i.PWMOutputState    driverlib.lib(pwm.o)
+    0x00002e28   0x00002e28   0x0000001e   Code   RO          775    i.PWMPulseWidthSet  driverlib.lib(pwm.o)
+    0x00002e46   0x00002e46   0x00000004   Code   RO          779    i.PWMSyncUpdate     driverlib.lib(pwm.o)
+    0x00002e4a   0x00002e4a   0x0000003e   Code   RO          964    i.SSIConfigSetExpClk  driverlib.lib(ssi.o)
+    0x00002e88   0x00002e88   0x0000000c   Code   RO          975    i.SSIDataGet        driverlib.lib(ssi.o)
+    0x00002e94   0x00002e94   0x00000012   Code   RO          976    i.SSIDataGetNonBlocking  driverlib.lib(ssi.o)
+    0x00002ea6   0x00002ea6   0x0000000a   Code   RO          973    i.SSIDataPut        driverlib.lib(ssi.o)
+    0x00002eb0   0x00002eb0   0x0000000a   Code   RO          966    i.SSIDisable        driverlib.lib(ssi.o)
+    0x00002eba   0x00002eba   0x0000000a   Code   RO          965    i.SSIEnable         driverlib.lib(ssi.o)
+    0x00002ec4   0x00002ec4   0x00000118   Code   RO         1096    i.SysCtlClockGet    driverlib.lib(sysctl.o)
+    0x00002fdc   0x00002fdc   0x0000011c   Code   RO         1095    i.SysCtlClockSet    driverlib.lib(sysctl.o)
+    0x000030f8   0x000030f8   0x0000000c   Code   RO         1086    i.SysCtlLDOSet      driverlib.lib(sysctl.o)
+    0x00003104   0x00003104   0x00000014   Code   RO         1097    i.SysCtlPWMClockSet  driverlib.lib(sysctl.o)
+    0x00003118   0x00003118   0x0000001c   Code   RO         1073    i.SysCtlPeripheralEnable  driverlib.lib(sysctl.o)
+    0x00003134   0x00003134   0x0000000e   Code   RO         1346    i.SysTickEnable     driverlib.lib(systick.o)
+    0x00003142   0x00003142   0x0000000e   Code   RO         1350    i.SysTickIntEnable  driverlib.lib(systick.o)
+    0x00003150   0x00003150   0x0000000a   Code   RO         1352    i.SysTickPeriodSet  driverlib.lib(systick.o)
+    0x0000315a   0x0000315a   0x0000000a   Code   RO         1433    i.UARTCharPut       driverlib.lib(uart.o)
+    0x00003164   0x00003164   0x00000030   Code   RO         1424    i.UARTConfigSetExpClk  driverlib.lib(uart.o)
+    0x00003194   0x00003194   0x0000001a   Code   RO         1423    i.UARTDisable       driverlib.lib(uart.o)
+    0x000031ae   0x000031ae   0x00000014   Code   RO         1422    i.UARTEnable        driverlib.lib(uart.o)
+    0x000031c2   0x000031c2   0x0000000e   Code   RO         1618    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x000031d0   0x000031d0   0x00000002   Code   RO         1619    i.__scatterload_null  mc_w.l(handlers.o)
+    0x000031d2   0x000031d2   0x0000000e   Code   RO         1620    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x000031e0   0x000031e0   0x00000004   Data   RO           38    .constdata          can_net.o
+    0x000031e4   0x000031e4   0x000009d8   Data   RO          122    .constdata          images.o
+    0x00003bbc   0x00003bbc   0x00000a00   Data   RO          123    .constdata          images.o
+    0x000045bc   0x000045bc   0x00000400   Data   RO          124    .constdata          images.o
+    0x000049bc   0x000049bc   0x000001e1   Data   RO          125    .constdata          images.o
+    0x00004b9d   0x00004b9d   0x0000011e   Data   RO          126    .constdata          images.o
+    0x00004cbb   0x00004cbb   0x0000001a   Data   RO          127    .constdata          images.o
+    0x00004cd5   0x00004cd5   0x00000208   Data   RO          128    .constdata          images.o
+    0x00004edd   0x00004edd   0x00000fc0   Data   RO          129    .constdata          images.o
+    0x00005e9d   0x00005e9d   0x0000000e   Data   RO          130    .constdata          images.o
+    0x00005eab   0x00005eab   0x0000000a   Data   RO          131    .constdata          images.o
+    0x00005eb5   0x00005eb5   0x00000006   Data   RO          132    .constdata          images.o
+    0x00005ebb   0x00005ebb   0x0000000a   Data   RO          133    .constdata          images.o
+    0x00005ec5   0x00005ec5   0x00000006   Data   RO          134    .constdata          images.o
+    0x00005ecb   0x00005ecb   0x00000006   Data   RO          135    .constdata          images.o
+    0x00005ed1   0x00005ed1   0x00000006   Data   RO          136    .constdata          images.o
+    0x00005ed7   0x00005ed7   0x00000006   Data   RO          137    .constdata          images.o
+    0x00005edd   0x00005edd   0x00000022   Data   RO          138    .constdata          images.o
+    0x00005eff   0x00005eff   0x0000000a   Data   RO          139    .constdata          images.o
+    0x00005f09   0x00005f09   0x0000000c   Data   RO          140    .constdata          images.o
+    0x00005f15   0x00005f15   0x0000023b   Data   RO          207    .constdata          rit128x96x4.o
+    0x00006150   0x00006150   0x000000a0   Data   RO          263    .constdata          sounds.o
+    0x000061f0   0x000061f0   0x00000030   Data   RO          264    .constdata          sounds.o
+    0x00006220   0x00006220   0x00000038   Data   RO          265    .constdata          sounds.o
+    0x00006258   0x00006258   0x00000048   Data   RO          266    .constdata          sounds.o
+    0x000062a0   0x000062a0   0x0000003c   Data   RO          267    .constdata          sounds.o
+    0x000062dc   0x000062dc   0x000000c8   Data   RO          268    .constdata          sounds.o
+    0x000063a4   0x000063a4   0x000000c8   Data   RO          269    .constdata          sounds.o
+    0x0000646c   0x0000646c   0x0000012c   Data   RO          270    .constdata          sounds.o
+    0x00006598   0x00006598   0x00000080   Data   RO         1105    .constdata          driverlib.lib(sysctl.o)
+    0x00006618   0x00006618   0x00000020   Data   RO         1616    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00006638, Size: 0x00004cb0, Max: 0x00010000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00006638   0x00000014   Data   RW            2    .data               audio.o
+    0x20000014   0x0000664c   0x00000048   Data   RW           39    .data               can_net.o
+    0x2000005c   0x00006694   0x00000034   Data   RW           85    .data               game.o
+    0x20000090   0x000066c8   0x00000014   Data   RW          155    .data               qs_ek-lm3s2965_revc.o
+    0x200000a4   0x000066dc   0x00000008   Data   RW          193    .data               random.o
+    0x200000ac   0x000066e4   0x00000009   Data   RW          208    .data               rit128x96x4.o
+    0x200000b5   0x000066ed   0x00000004   Data   RW          250    .data               screen_saver.o
+    0x200000b9   0x000066f1   0x00000003   PAD
+    0x200000bc        -       0x00000050   Zero   RW           37    .bss                can_net.o
+    0x2000010c        -       0x000030ec   Zero   RW           84    .bss                game.o
+    0x200031f8        -       0x00001800   Zero   RW          154    .bss                qs_ek-lm3s2965_revc.o
+    0x200049f8        -       0x00000040   Zero   RW          192    .bss                random.o
+    0x20004a38        -       0x00000078   Zero   RW          249    .bss                screen_saver.o
+    0x20004ab0        -       0x00000200   Zero   RW          282    STACK               startup_rvmdk.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       444         16          0         20          0       5710   audio.o
+       592         30          4         72         80       5639   can_net.o
+      4868        208          0         52      12524      10900   game.o
+         0          0      11569          0          0       1635   images.o
+       976         56          0         20       6144       3617   qs_ek-lm3s2965_revc.o
+       400         34          0          8         64       2331   random.o
+       820         30        571          9          0       6282   rit128x96x4.o
+      1136         38          0          4        120       2954   screen_saver.o
+         0          0       1096          0          0        941   sounds.o
+       252        242          0          0        512        300   startup_rvmdk.o
+
+    ----------------------------------------------------------------------
+      9488        654      13272        188      19444      40309   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         0          0          0          3          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+      1590         14          0          0          0      17076   can.o
+       366          0          0          0          0       6468   gpio.o
+       192          0          0          0          0       1266   interrupt.o
+       142          0          0          0          0       4566   pwm.o
+       122          0          0          0          0       3527   ssi.o
+       630         56        128          0          0       4719   sysctl.o
+        38          0          0          0          0       1404   systick.o
+       104          0          0          0          0       2475   uart.o
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         4          0          0          0          0          0   entry12b.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+
+    ----------------------------------------------------------------------
+      3280         86        128          0          0      41569   Library Totals
+         6          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+      3184         70        128          0          0      41501   driverlib.lib
+        90         16          0          0          0         68   mc_w.l
+
+    ----------------------------------------------------------------------
+      3280         86        128          0          0      41569   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     12768        740      13400        188      19444      79268   Grand Totals
+     12768        740      13400        188      19444      79268   ELF Image Totals
+     12768        740      13400        188          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                26168 (  25.55kB)
+    Total RW  Size (RW Data + ZI Data)             19632 (  19.17kB)
+    Total ROM Size (Code + RO Data + RW Data)      26356 (  25.74kB)
+
+==============================================================================
+

@@ -1,0 +1,21 @@
+[WORKSPACE]
+  MPW_NAME=ek-lm3s6965_revc
+  Project="../../src/driverlib.Uv2",A
+  Project="bitband/bitband.Uv2"
+  Project="blinky/blinky.Uv2"
+  Project="boot_demo1/boot_demo1.Uv2"
+  Project="boot_demo2/boot_demo2.Uv2"
+  Project="enet_lwip/enet_lwip.Uv2"
+  Project="enet_ptpd/enet_ptpd.Uv2"
+  Project="enet_uip/enet_uip.Uv2"
+  Project="gpio_jtag/gpio_jtag.Uv2"
+  Project="graphics/graphics.Uv2"
+  Project="hello/hello.Uv2"
+  Project="interrupts/interrupts.Uv2"
+  Project="mpu_fault/mpu_fault.Uv2"
+  Project="pwmgen/pwmgen.Uv2"
+  Project="qs_ek-lm3s6965_revc/qs_ek-lm3s6965_revc.Uv2"
+  Project="sd_card/sd_card.Uv2"
+  Project="timers/timers.Uv2"
+  Project="uart_echo/uart_echo.Uv2"
+  Project="watchdog/watchdog.Uv2"

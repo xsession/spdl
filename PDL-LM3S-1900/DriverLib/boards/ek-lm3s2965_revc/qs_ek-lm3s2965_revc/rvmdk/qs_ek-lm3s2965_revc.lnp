@@ -1,0 +1,16 @@
+--cpu Cortex-M3
+".\rvmdk\audio.o"
+".\rvmdk\can_net.o"
+".\rvmdk\game.o"
+".\rvmdk\images.o"
+".\rvmdk\qs_ek-lm3s2965_revc.o"
+".\rvmdk\random.o"
+".\rvmdk\rit128x96x4.o"
+".\rvmdk\screen_saver.o"
+".\rvmdk\sounds.o"
+".\rvmdk\startup_rvmdk.o"
+"..\..\..\src\rvmdk\driverlib.lib"
+--library_type=microlib --strict --scatter ".\rvmdk\qs_ek-lm3s2965_revc.sct"
+--entry Reset_Handler --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\rvmdk\qs_ek-lm3s2965_revc.map" -o .\rvmdk\qs_ek-lm3s2965_revc.axf

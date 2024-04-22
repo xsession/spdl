@@ -1,0 +1,12 @@
+.\rvmdk\screen_saver.o: screen_saver.c
+.\rvmdk\screen_saver.o: ../../../hw_memmap.h
+.\rvmdk\screen_saver.o: ../../../hw_types.h
+.\rvmdk\screen_saver.o: ../../../src/gpio.h
+.\rvmdk\screen_saver.o: ../../../src/pwm.h
+.\rvmdk\screen_saver.o: ../../../src/sysctl.h
+.\rvmdk\screen_saver.o: ../rit128x96x4.h
+.\rvmdk\screen_saver.o: audio.h
+.\rvmdk\screen_saver.o: can_net.h
+.\rvmdk\screen_saver.o: globals.h
+.\rvmdk\screen_saver.o: random.h
+.\rvmdk\screen_saver.o: screen_saver.h
